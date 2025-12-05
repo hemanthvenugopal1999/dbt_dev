@@ -1,0 +1,8 @@
+# files using the `{{ config(...) }}` macro.
+version: 2
+models:
+  - name: bronze_dimcustomer
+    config:
+      materialized: view 
+
+  
