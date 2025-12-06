@@ -1,1 +1,1 @@
- {{ target.catalog }}
+select * from {{ ref("lookuptable")}}
