@@ -1,8 +1,32 @@
 # files using the `{{ config(...) }}` macro.
 version: 2
 models:
-  - name: bronze_dimcustomer
+  - name: bronze_dimdate_1
     config:
       materialized: view 
+  - name: bronze_dimcustomer
+    columns:
+      - name: customer_sk
+        data_tests:
+          - unique
+          - not_null
+  - name: bronze_factsales
+    columns:
+      - name: sales_id
+        data_tests:
+          - unique
+          - not_null
+      - name: gross_amount
+        data_tests:
+          - nonnegative
+       
 
+      - name: payment_method
+        data_tests:
+        - accepted_values:
+             arguments:  
+               values: ['Card1','Cash','Digital Wallet']
+             config:
+              severity: warn
+      
   

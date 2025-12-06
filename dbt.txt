@@ -1,0 +1,42 @@
+uv commands
+
+uv init to create virtual enveronment
+
+uv sync to create the and sync envronment 
+
+uv add dbt-core  dbt-snowflake dbt-databricks 
+
+uv pip freeze> requirements.txt
+
+
+git branch  -m main
+
+git add .
+git commit -m "initial commit"
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+Set-ExecutionPolicy RemoteSigned
+dapi6eb0a923266edfca9085974edf1027f2
+
+
+dapi6eb0a923266edfca9085974edf1027f2
+dbt init 
+
+dbt run
+
+dbt run --select bronze_date
+
+dbt run --select "bronze_date bronze_factsales"dbt run --select "models/bronze"
+
+- name: payment_method
+        data_tests:
+          - accepted_values:
+              arguments: # available in v1.10.5 and higher. Older versions can set the <argument_name> as the top-level property.
+                values: ['Card','Cash','Digital Wallet']
+				
+				
+				
+				
+				
+ dbt run --target prod
