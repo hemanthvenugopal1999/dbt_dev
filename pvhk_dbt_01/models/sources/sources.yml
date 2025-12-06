@@ -8,5 +8,6 @@ sources:
       - name: fact_returns
       - name: dim_product
       - name: dim_customer
+      - name: orders
 
  
